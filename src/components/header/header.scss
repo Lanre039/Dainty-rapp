@@ -1,0 +1,58 @@
+@import '../../index.scss';
+
+
+.header {
+    
+    padding-top: 6rem;
+    width: 100%;
+    height: 100vh;
+
+    &__text {
+        font-size: 4rem;
+        font-weight: 300;
+        padding: 4rem 1.2rem;
+        position: absolute;
+        text-decoration: none;
+        z-index: 20000;
+
+        
+    }
+
+    &__format {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__details {
+        color: #fff;
+        position: absolute;
+        right: 1px;
+        left: 1px;
+        bottom: 65px;
+        text-align: center;
+        line-height: 1.3;
+    
+        &--01 {
+        font-weight: 100;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        text-transform: uppercase; 
+        }
+
+            
+       &--02 {
+        font-weight: 100;
+        font-size: 2rem;        
+        }
+
+    }
+    
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 6rem;
+    opacity: .75;
+    transition: all, .3s;
+}

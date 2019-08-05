@@ -1,0 +1,71 @@
+@import '../../index.scss';
+
+.features {
+    background-color: rgba($color-primary, 0.3);
+    padding: 3rem 0; 
+      
+
+    &__home--list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.7rem;
+    }
+
+    &__home--list-01 {
+        width: 75%;
+        margin: 0 auto;
+        line-height: 1.7;
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 3px;
+        padding: 6rem;
+        padding-left: 9rem;
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+        transform: skewX(-12deg);
+        
+    }
+
+    &:focus {
+        outline: none;
+        
+    }
+    
+}
+
+.img {
+    width: 20rem;
+    height: 20rem;
+    float: left;
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 50%;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+}
+
+.heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 550;
+    color: $color-primary-dark;
+    text-transform: uppercase;
+}
+
+.heading-large {
+    font-weight: 550;
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: $color-primary-dark;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.para {
+    font-size: 1.4rem;
+    margin: 0 5rem;
+    text-align: center;
+}

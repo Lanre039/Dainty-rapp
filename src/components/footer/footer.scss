@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.footer {
+    background-color: $color-primary-dark;
+    
+    .copyright {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $color-grey-light-1;
+        padding: 5rem;
+        text-align: center;
+        
+    }
+    
+    
+}
