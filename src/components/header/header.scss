@@ -1,6 +1,7 @@
 @import '../../index.scss';
 
 
+
 .header {
     
     padding-top: 6rem;
@@ -9,7 +10,7 @@
 
     &__text {
         font-size: 4rem;
-        font-weight: 300;
+        font-weight: 350;
         padding: 4rem 1.2rem;
         position: absolute;
         text-decoration: none;
@@ -33,8 +34,8 @@
         line-height: 1.3;
     
         &--01 {
-        font-weight: 100;
-        font-size: 2.5rem;
+        font-weight: 600;
+        font-size: 5rem;
         letter-spacing: 1px;
         text-transform: uppercase; 
         }

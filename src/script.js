@@ -1,5 +1,7 @@
+
+
 var i = 0;
-var images = ["src/components/topbar/events.jpg", "src/components/topbar/events-1.jpg", "src/components/topbar/events-3.jpg"];
+var images = [require('src/components/HomeCarousel/events.jpg'), require('src/components/HomeCarousel/events-1.jpg'), require('src/components/HomeCarousel/events-3.jpg')];
 var time = 3000;
 
 function changeImg(){
