@@ -10,9 +10,9 @@ const Topbar = () => (
     <div id="home" tabIndex={-1} className="topbar">
         <nav className="nav">
             <div className="nav__social-icons">
-              <a className="nav__social-icons-01" href="https://facebook.com"><i class="fab fa-facebook fa-3x"></i></a>
-              <a className="nav__social-icons-02" href="https://instagram.com"><i class="fab fa-instagram fa-3x"></i></a>
-              <a className="nav__social-icons-03" href="https://twitter.com"><i class="fab fa-twitter fa-3x"></i></a>
+              <a className="nav__social-icons-01" href="https://facebook.com"><i className="fab fa-facebook fa-3x"></i></a>
+              <a className="nav__social-icons-02" href="https://instagram.com"><i className="fab fa-instagram fa-3x"></i></a>
+              <a className="nav__social-icons-03" href="https://twitter.com"><i className="fab fa-twitter fa-3x"></i></a>
             </div>
             <ul className="nav__list">
               <li className="nav__item"><a href="#home" className="nav__link">Home</a></li>
