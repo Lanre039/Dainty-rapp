@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-
-
-import Header  from './components/header/header';
 import Footer  from './components/footer/footer';
-import Features from './components/features/features';
-import Ourwork from './components/ourWork/ourwork';
-import ContactUs from './components/contactUS/contactUs';
 import Topbar from './components/topbar/topbar';
+import HomePage from './components/homepage/homepage.component';
+import Birthdays from './components/birthdays/birthdays.components';
+import Weddings from './components/weddings/weddings.component';
+import Corporate from './components/corporate/corporate.component';
 
 
 
@@ -16,11 +15,12 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Topbar/>
-        <Header animDuration={1}/>
-        <Features/>
-        <Ourwork/>
-        <ContactUs/>
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/birthdays' component={Birthdays} />
+          <Route exact path='/weddings' component={Weddings} />
+          <Route exact path='/corporate' component={Corporate} />
+        </Switch>
         <hr/>
         <Footer email={'rajilat1000gmail.com'}/>
 

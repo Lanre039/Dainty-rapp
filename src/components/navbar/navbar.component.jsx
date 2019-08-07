@@ -1,12 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import './topbar.scss';
-import './css/all.css';
+import './navbar.styles.scss';
 
-
-
-
-const Topbar = () => (
+const NavBar = () => (
     <div id="home" tabIndex={-1} className="topbar">
         <nav className="nav">
             <div className="nav__social-icons">
@@ -15,14 +12,14 @@ const Topbar = () => (
               <a className="nav__social-icons-03" href="https://twitter.com"><i className="fab fa-twitter fa-3x"></i></a>
             </div>
             <ul className="nav__list">
-              <li className="nav__item"><a href="#home" className="nav__link">Home</a></li>
-              <li className="nav__item"><a href="#events" className="nav__link">Events</a></li>
-              <li className="nav__item"><a href="#our-work" className="nav__link">Our work</a></li>
-              <li className="nav__item"><a href="#contact-us" className="nav__link">Contact us</a></li>
+              <li className="nav__item"><Link to="/" className="nav__link">Home</Link></li>
+              <li className="nav__item"><Link to="/birthdays" className="nav__link">Birthdays</Link></li>
+              <li className="nav__item"><Link to="/weddings" className="nav__link">Weddings</Link></li>
+              <li className="nav__item"><Link to="/corporate" className="nav__link">Corporate</Link></li>
             </ul>
         </nav>
     </div>
 );
 
 
-export default Topbar;
+export default NavBar;

@@ -4,7 +4,6 @@ import './features.scss';
 
 import FeaturesItem from './featuresItem';
 
-
 class Features extends React.Component {
   constructor() {
     super();
@@ -14,17 +13,20 @@ class Features extends React.Component {
         {
           img: 3,
           title: 'Birthdays',
+          path: '/birthdays',
           content: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' 
         },
         {
           img: 4,
           title: 'Corporate',
+          path: '/corporate',
           content: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
         },
         
         {
           img: 5,
           title: 'Weddings',
+          path: '/weddings',
           content: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure.' 
         },
 
@@ -38,7 +40,7 @@ class Features extends React.Component {
 
   render() {
     return (
-      <div id="about-us" tabIndex={-1} className="features">
+      <div id="events" tabIndex={-1} className="features">
         <h1 className="heading-large">{this.state.name}</h1>
         <p className="para">{this.state.description}</p>
         {
