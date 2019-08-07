@@ -3,12 +3,15 @@
 .features {
     background-color: rgba($color-primary, 0.3);
     padding: 3rem 0; 
-      
-
+    
     &__home--list {
         display: flex;
         flex-direction: column;
         margin-top: 1.7rem;
+    }
+    
+    &__home--list-link {
+        text-decoration: none;
     }
 
     &__home--list-01 {

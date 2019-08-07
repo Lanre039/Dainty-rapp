@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './header.scss';
 
@@ -41,7 +42,7 @@ class Header extends React.Component {
       <div className="header">
             <div className="header__text">
                 <h1>
-                    <a href="index.html" className="header__format">Dainty Events</a>
+                    <Link to="/" className="header__format">Dainty Events</Link>
                 </h1>
             </div>
             <img src={ this.backgrounds[this.state.backgroundIndex] } alt="slide" className="slide" />
