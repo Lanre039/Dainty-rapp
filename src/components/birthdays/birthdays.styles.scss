@@ -1,3 +1,85 @@
-.birthday-page {
-    padding: 20rem;
+@import '../../index.scss';
+
+.birthday {
+    background-color: $color-grey-light-1;
+    
+    &__heading {
+        padding: 8rem 0 2rem 21rem;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary);
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 2px;
+        transition: all .2s;
+        text-align: center;
+
+        &:hover {
+            transform: skewY(1deg) skewX(7deg) scale(1.1);
+        }
+        
+    }
+    
+    &__list {    
+        
+        
+    }
+    
+    &__layout {
+        width: 80%;
+        
+        margin: 2rem auto;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+    }
+    
+    &__details {
+        display: table-cell;
+        width: 66.66667%;
+        vertical-align: middle;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    &__img {
+        display: table-cell;
+        width: 33.3333%;
+
+        &--one, &--two {
+            display: block;
+            width: 100%;
+        }
+    }
+
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+
+    &--2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        text-align: center;
+
+    }
+
+    
+    &--3 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        line-height: 1.7;
+        margin-bottom: 4rem;
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid $color-grey-dark-1;
+    }
 }
