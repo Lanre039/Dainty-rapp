@@ -55,6 +55,7 @@
 
     &__item {
         padding-right: 1.5rem;
+        
     }
     
 
@@ -72,6 +73,10 @@
         display: block;
         z-index: 2000;
         transition: all .3s;
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5px;
+            padding: 5px;
+        }
     }
 
     &__link:hover,
@@ -82,4 +87,3 @@
     }
     
 }
-

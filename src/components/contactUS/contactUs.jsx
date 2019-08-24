@@ -38,7 +38,7 @@ class ContactUs extends React.Component {
             <div className='contactUs-details'>
                 <form className='form' onSubmit={this.handleSubmit}>
                 <div className='margin-format heading'>
-                    <h2 className='heading-secondary'>
+                    <h2 className='heading'>
                         Contact us
                     </h2>
                 </div>

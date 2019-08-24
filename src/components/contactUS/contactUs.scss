@@ -13,14 +13,25 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 
+    @media only screen and (max-width: $bp-medium) {
+        width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 100%;
+    }
+
     &-details {
      //   width: 95%;
         overflow: hidden;
-        padding: 5.5rem;
+        padding: 5rem;
         position: relative;
         display: flex;
         justify-content: space-between;
         
+        @media only screen and (max-width: $bp-large) {
+            padding: 2.5rem;
+        }
     }
     
     &-address {
@@ -35,6 +46,11 @@
         height: 18rem;
         color: rgba(black, 0.7);
         font-size: 1.3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            //font-size: 1.1rem;
+            margin-right: 5px;
+        }
     }
 
     &:focus {
@@ -50,7 +66,11 @@
 }
 
 .form__group:not(:last-child) {
-    //margin-bottom: 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: -16px;
+    }
+    
 }
 
 .form {
@@ -68,6 +88,14 @@
         width: 170%;
         display: block;
         transition: all .3s;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: .8rem 2rem;
+            width: 150%;
+        }
+        @media only screen and (max-width: $bp-small) {
+            width: 140%;
+        }
     }
 
     &:focus {
