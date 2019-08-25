@@ -48,8 +48,13 @@
         font-size: 1.3rem;
 
         @media only screen and (max-width: $bp-small) {
-            //font-size: 1.1rem;
-            margin-right: 5px;
+            width: 20rem;
+            margin-right: 10px;
+        }
+        
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1rem;
+            margin-right: 7px;
         }
     }
 
@@ -95,6 +100,10 @@
         }
         @media only screen and (max-width: $bp-small) {
             width: 140%;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            width: 100%;
+            padding: .3rem 1rem;
         }
     }
 

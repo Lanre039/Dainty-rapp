@@ -8,6 +8,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 1.7rem;
+    
     }
     
     &__home--list-link {
@@ -27,12 +28,13 @@
         font-size: 1.6rem;
         transform: skewX(-12deg);
 
-        @media only screen and (max-width: $bp-large) {
-            line-height: 1.5;
-            font-size: 1.5rem;
+        @media only screen and (max-width: $bp-small) {
+            width: 90%;
+            transform: skewX(1deg);
         }
-        @media only screen and (max-width: $bp-large) {
+        @media only screen and (max-width: $bp-smallest) {
             font-size: 1.3rem;
+            padding: 4.5rem;
         }
         
     }
@@ -55,6 +57,12 @@
     border-radius: 50%;
     clip-path: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 12rem;
+        height: 12rem;
+        transform: translateX(-1rem) skewX(1deg);
+    }
 }
 
 .heading {
@@ -66,7 +74,7 @@
 
     @media only screen and (max-width: $bp-medium) {
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
 }
 
@@ -78,6 +86,11 @@
     color: $color-primary-dark;
     text-transform: uppercase;
     text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .para {

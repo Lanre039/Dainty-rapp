@@ -34,8 +34,9 @@
         &-01, 
         &-02,
         &-03 {
-            margin-left: 1.5rem;
+            padding-left: 1.5rem;
             color: $color-primary;
+
         }
         
         
@@ -43,7 +44,7 @@
 
 
     &__list {
-        padding-left: 8rem;
+        padding-left: 6rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -51,6 +52,14 @@
         list-style: none;
         white-space: nowrap;
         
+        @media only screen and (max-width: $bp-small) {
+            width: 60%;
+            margin-left: 4rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            width: 40%;
+            margin-left: 7rem;
+        }
     }
 
     &__item {
@@ -73,10 +82,9 @@
         display: block;
         z-index: 2000;
         transition: all .3s;
-        @media only screen and (max-width: $bp-small) {
-            font-size: 1.5px;
-            padding: 5px;
-        }
+
+        
+        
     }
 
     &__link:hover,

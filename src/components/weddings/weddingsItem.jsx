@@ -11,7 +11,7 @@ const WeddingsItem = props => (
                 <img src={require(`./gal-${props.section.img[1]}.jpeg`)} alt="wedding" className="weddings__img--two" />
             </div>
             <div className="weddings__details">
-                <h1 className="heading">{props.section.event}</h1>
+                <h1 className="heading--1">{props.section.event}</h1>
                 <h2 className='heading--2'>{props.section.location}</h2>
                 <p className='heading--3'>{props.section.testimony}</p>
             </div>

@@ -4,7 +4,7 @@
     background-color: $color-grey-light-1;
     
     &__heading {
-        padding: 8rem 0 2rem 21rem;
+        padding-top: 8rem;
         font-size: 2.5rem;
         text-transform: uppercase;
         font-weight: 700;
@@ -15,6 +15,13 @@
         letter-spacing: 2px;
         transition: all .2s;
         text-align: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.7rem;
+        }
 
         &:hover {
             transform: skewY(1deg) skewX(7deg) scale(1.1);
@@ -34,6 +41,13 @@
         background-color: rgba(255, 255, 255, 0.4);
         box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
         border-radius: 3px;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 85%;
+        }
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
     }
     
     &__details {
@@ -47,23 +61,58 @@
     &__img {
         display: table-cell;
         width: 33.3333%;
-        padding: 5rem 0;
 
-        &--one {
+        @media only screen and (max-width: $bp-smallest) {
+            display: flex;
+            position: relative;
+            width: 40%;
+            margin: 2rem 5rem;
+            
+        }
+
+        &--one, &--two {
             display: block;
             width: 100%;
+
+        }
+
+        &--two {
+            @media only screen and (max-width: $bp-smallest) {
+                margin-left: 2rem;
+            }
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            padding-top: 3rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            padding-top: 5rem;
         }
     }
 
 }
 
 .heading {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-    text-align: center;
 
+    &--1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $color-primary-dark;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+        letter-spacing: 2px;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 0;
+        }
+
+    }
+    
     &--2 {
         font-size: 1.6rem;
         font-weight: 700;
@@ -71,9 +120,12 @@
         margin-bottom: 1rem;
         text-align: center;
 
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.4rem;
+        }
+
     }
 
-    
     &--3 {
         font-size: 1.5rem;
         font-weight: 200;
@@ -82,5 +134,11 @@
         column-count: 2;
         column-gap: 4rem;
         column-rule: 1px solid $color-grey-dark-1;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.3rem;
+        }
+        
     }
+    
 }

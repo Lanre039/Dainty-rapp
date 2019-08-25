@@ -43,18 +43,31 @@
 
 
     &__list {
-        padding-left: 8rem;
+        padding-left: 6rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         text-decoration: none;
         list-style: none;
         white-space: nowrap;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 60%;
+            margin-left: 4rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            width: 40%;
+            margin-left: 9rem;
+        }
         
     }
 
     &__item {
         padding-right: 1.5rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding-right: .2rem;
+        }
     }
     
 
