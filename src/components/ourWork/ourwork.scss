@@ -3,7 +3,14 @@
 .our-work {
     
     background-color: $color-grey-light-1;
-    padding: 5rem 5rem;
+    padding: 5rem;
+    
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        padding: 0;
+    }
     
 
     &__layout {
@@ -12,6 +19,12 @@
 
     grid-gap: 1.5rem;
     padding: 1.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-gap: .8rem;
+        padding: 1rem;
+    }
+
     }
 
     &__item {

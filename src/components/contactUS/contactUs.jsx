@@ -27,36 +27,37 @@ class ContactUs extends React.Component {
     console.log(this.state);
     
     axios.post('https://www.enformed.io/41qi9muq', this.state)
-      .then(res => console.log(res))
-      .catch(err => console.log(err.message)
+      .then(res => {
+              if(res.status === 200) 
+                  this.setState({ name: '', email: '', phone: '', message: ''});
+      }).catch(err => console.log(err.message)
     );
   };
   
   render() {
+    const { name, email, phone, message } = this.state;
     return (
       <section id='contact-us' tabIndex={-1} className='contactUs'>
-            <div className='contactUs-details'>
+            <div className="heading-large margin-format">
+                Contact Us
+              </div>
+            <div className="contactUs__content" id="contact-me">
+              
                 <form className='form' onSubmit={this.handleSubmit}>
-                <div className='margin-format heading'>
-                    <h2 className='heading'>
-                        Contact us
-                    </h2>
+                <div className='form__group'>
+                    <input onChange={this.handleChange} value={name} name='name' type='text'  className='form__input' placeholder='Full name' id='name' required minLength="4" />
+                    {/* <label htmlFor='name' className='form__label'>Full Name</label> */}
                 </div>
                 <div className='form__group'>
-                    <input onChange={this.handleChange} name='name' type='text'  className='form__input' placeholder='Full name' id='name' required />
-                    <label htmlFor='name' className='form__label'>Full Name</label>
+                    <input onChange={this.handleChange} value={email} name='email' type='email' className='form__input' placeholder='Email address' id='email' required />
+                    {/* <label htmlFor='email' className='form__label'>Email Address</label> */}
                 </div>
                 <div className='form__group'>
-                    <input onChange={this.handleChange} name='email' type='email' className='form__input' placeholder='Email address' id='email' required />
-                    <label htmlFor='email' className='form__label'>Email Address</label>
-                </div>
-                <div className='form__group'>
-                    <input onChange={this.handleChange} name='phone' type='text' className='form__input' placeholder='Phone number' id='phone' required />
-                    <label htmlFor='phone' className='form__label'>Phone Number</label>
+                    <input onChange={this.handleChange}  value={phone} name='phone' type='text' className='form__input' placeholder='Phone number' id='phone' required minLength="11" />
+                    {/* <label htmlFor='phone' className='form__label'>Phone Number</label> */}
                 </div>
                 <div className='form__group'>            
-                    <textarea onChange={this.handleChange} name='message' cols={10} rows={4} className='form__input' placeholder='Comment' aria-invalid='false' defaultValue=''/>
-                    <label htmlFor='message' className='form__label'>Your Message</label>
+                    <textarea onChange={this.handleChange} value={message} name='message' cols={10} rows={7} className='form__input' placeholder='Drop your message...' minLength="20" aria-invalid='false' defaultValue=''/>
                 </div>
                 <button type='submit' className='form__button'>Send</button>
             </form>

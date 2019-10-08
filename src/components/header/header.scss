@@ -1,75 +1,132 @@
 @import '../../index.scss';
 
-
-
 .header {
     
-    padding-top: 6rem;
+    // padding-top: 6rem;
+    // background-color: rgba($color-primary, 0.3);
     width: 100%;
     height: 100vh;
+    
+    @media only screen and (max-width: $bp-medium) {
+        height: auto;
+    }
 
     &__text {
-        font-size: 4rem;
-        font-weight: 350;
-        padding: 4rem 1.2rem;
         position: absolute;
+        background-color: transparent;
+        // height: 70vh;
+        width: 100%;
         text-decoration: none;
         z-index: 20000;
 
-        
     }
 
     &__format {
+        font-size: 5rem;
+        font-weight: 350;
+        padding-left: 2rem;
+        // padding-bottom: 5rem;
         text-decoration: none;
         color: #fff;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+            // padding: 3rem .5rem;
+            font-size: 2.5rem;
+        }
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 2rem;
+            
+        }
     }
 
     &__details {
         color: #fff;
-        position: absolute;
-        right: 1px;
-        left: 1px;
-        bottom: 65px;
-        text-align: center;
+        // position: absolute;
+        padding-top: 4rem;
+        // right: 1px;
+        // left: 1px;
+        // bottom: 0;
         line-height: 1.3;
+        
+        @media only screen and (max-width: $bp-smallest) {
+            // bottom: 230px;
+            line-height: 1.2;
+        }
+        @media only screen and (max-width: $bp-mobile) {
+            padding-top: 2rem;
+            
+        }
     
         &--01 {
             font-weight: 600;
-            font-size: 5rem;
+            font-size: 4rem;
+            padding-top: 30rem;
             letter-spacing: 1px;
+            text-align: center;
             text-transform: uppercase; 
 
             @media only screen and (max-width: $bp-medium) {
+                padding-top: 22rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                padding-top: 18rem;
                 font-size: 4rem;
             }
             @media only screen and (max-width: $bp-small) {
+                padding-top: 15rem;
                 font-size: 3rem;
+                line-height: 1;
             }
-        
+            @media only screen and (max-width: $bp-smallest) {
+                padding-top: 12rem;
+                font-size: 2rem;
+            }
+            @media only screen and (max-width: $bp-mobile) {
+                padding-top: 4rem;
+                font-size: 1.5rem;
+                
+            }
         }
 
             
        &--02 {
-        font-weight: 100;
-        font-size: 2rem;
+            font-weight: 100;
+            font-size: 2rem;
+            padding: .5rem 1rem;
+            text-align: center;
         
-        @media only screen and (max-width: $bp-medium) {
-            font-size: 1.5rem;
-        }
-        @media only screen and (max-width: $bp-small) {
-            font-size: 1.5rem;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.7rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.5rem;
+            }
         }
         
-        }
 
     }
     
 }
 
 .slide {
-    width: 100%;
     height: 100vh;
-    padding-bottom: 6rem;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    // padding-bottom: 6rem;
     opacity: .75;
     transition: all, .3s;
+
+    @media only screen and (max-width: $bp-medium) {
+        height: auto;
+    }    
+    
+    // }
+    // @media only screen and (max-width: $bp-smallest) {
+    //     height: 65vh;
+    // }
 }

@@ -41,23 +41,20 @@ class Header extends React.Component {
     return (
       <div className="header">
             <div className="header__text">
+                <div className="header__details">
                 <h1>
                     <Link to="/" className="header__format">Dainty Events</Link>
                 </h1>
-            </div>
-            <img src={ this.backgrounds[this.state.backgroundIndex] } alt="slide" className="slide" />
-            <div className="header__details">
                 <h1 className="header__details--01">Give Your Events a Professional Touch</h1>
                 <h2 className="header__details--02">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </h2>
             </div>
-        
+            </div>
+            <img src={ this.backgrounds[this.state.backgroundIndex] } alt="slide" className="slide" />
         </div>
     )
   }
 }
-
-
 
 export default Header;

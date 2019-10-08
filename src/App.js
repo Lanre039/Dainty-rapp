@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import { Switch, Route } from 'react-router-dom';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 
 import Footer  from './components/footer/footer';
 import Topbar from './components/topbar/topbar';

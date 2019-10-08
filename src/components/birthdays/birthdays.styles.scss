@@ -5,7 +5,7 @@
     text-align: center;
     
     &__heading {
-        padding-top: 8rem;
+        padding-top: 3rem;
         font-size: 2.5rem;
         text-transform: uppercase;
         font-weight: 700;
@@ -23,6 +23,7 @@
         @media only screen and (max-width: $bp-small) {
             font-size: 1.7rem;
         }
+        
 
         &:hover {
             transform: skewY(1deg) skewX(7deg) scale(1.1);
@@ -44,11 +45,12 @@
         border-radius: 3px;
 
         @media only screen and (max-width: $bp-medium) {
-            width: 85%;
+            width: 90%;
         }
         @media only screen and (max-width: $bp-small) {
             width: 100%;
         }
+
     }
     
     &__details {
@@ -57,6 +59,8 @@
         vertical-align: middle;
         padding: 1rem 2rem;
         text-align: center;
+
+        
     }
 
     &__img {
@@ -65,30 +69,38 @@
 
         @media only screen and (max-width: $bp-smallest) {
             display: flex;
+            justify-content: center;
             position: relative;
             width: 40%;
-            margin: 2rem 5rem;
+            margin: 1rem auto;
+            
             
         }
+        
 
         &--one, &--two {
             display: block;
             width: 100%;
 
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 1rem;
+                
+            }
+
         }
 
         &--two {
             @media only screen and (max-width: $bp-smallest) {
-                margin-left: 2rem;
+                margin-left: 1rem;
+                
             }
+            
         }
 
         @media only screen and (max-width: $bp-medium) {
             padding-top: 3rem;
         }
-        @media only screen and (max-width: $bp-small) {
-            padding-top: 5rem;
-        }
+        
     }
 
 }
@@ -100,8 +112,7 @@
         font-weight: 600;
         color: $color-primary-dark;
         text-transform: uppercase;
-        margin-bottom: 2rem;
-        margin-top: 3rem;
+        margin: 2rem auto;
         letter-spacing: 2px;
         text-align: center;
 
@@ -111,6 +122,7 @@
         @media only screen and (max-width: $bp-small) {
             margin-top: 0;
         }
+        
 
     }
     
@@ -126,6 +138,7 @@
         @media only screen and (max-width: $bp-small) {
             font-size: 1.4rem;
         }
+        
 
     }
 
@@ -139,7 +152,7 @@
         column-rule: 1px solid $color-grey-dark-1;
 
         @media only screen and (max-width: $bp-small) {
-            font-size: 1.3rem;
+            column-count: 1 !important;
         }
         
     }

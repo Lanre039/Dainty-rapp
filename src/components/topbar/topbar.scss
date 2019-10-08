@@ -6,8 +6,6 @@
     padding: 0 15rem;
     position: relative;
     
-
-    
 }
 .nav {
     position: fixed;
@@ -58,8 +56,10 @@
         }
         @media only screen and (max-width: $bp-smallest) {
             width: 40%;
-            margin-left: 7rem;
+            margin-left: 6rem;
+         
         }
+        
     }
 
     &__item {

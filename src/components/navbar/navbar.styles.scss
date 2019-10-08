@@ -9,6 +9,46 @@
 
     
 }
+.md-ref {
+    display: block;
+    padding: .5rem 1rem;
+ 
+}
+.md-nav {
+    background-color:#fff !important;
+    padding: .8rem !important;
+    color: $color-primary !important;
+
+    &__head {
+        color: $color-primary !important;
+        font-size: 1.5rem !important;
+        margin-right: 2rem !important;
+    }
+
+    &__toggle {
+        background-color: $color-primary !important;
+        
+    }
+    
+    &__link {
+    color: orangered !important; 
+    font-size: 1.8rem !important;
+    font-weight: 500 !important;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: black !important;
+        color: #fff !important;
+        transition: all .3s;
+    }
+
+    &__si {
+        font-size: 1.8rem !important;
+        color: $color-primary !important;
+    }
+    
+}
 .nav {
     position: fixed;
     top: 0;

@@ -1,38 +1,11 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// import './navbar.styles.scss';
-
-// const NavBar = () => (
-//     <div id="home" tabIndex={-1} className="topbar">
-//         <nav className="nav">
-//             <div className="nav__social-icons">
-//               <a className="nav__social-icons-01" href="https://facebook.com"><i className="fab fa-facebook fa-3x"></i></a>
-//               <a className="nav__social-icons-02" href="https://instagram.com"><i className="fab fa-instagram fa-3x"></i></a>
-//               <a className="nav__social-icons-03" href="https://twitter.com"><i className="fab fa-twitter fa-3x"></i></a>
-//             </div>
-//             <ul className="nav__list">
-//               <li className="nav__item"><Link to="/" className="nav__link">Home</Link></li>
-//               <li className="nav__item"><Link to="/birthdays" className="nav__link">Birthdays</Link></li>
-//               <li className="nav__item"><Link to="/weddings" className="nav__link">Weddings</Link></li>
-//               <li className="nav__item"><Link to="/corporate" className="nav__link">Corporate</Link></li>
-//             </ul>
-//         </nav>
-//     </div>
-// );
-
-
-// export default NavBar;
-
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 
-
 import './navbar.styles.scss';
 
-class Navbar extends Component {
+class NavbarPage extends Component {
 state = {
   isOpen: false
 };
@@ -43,7 +16,7 @@ toggleCollapse = () => {
 
 render() {
   return (
-    
+    <Router>
       <MDBNavbar color="default-color" dark expand="md" className="md-nav">
         <MDBNavbarBrand>
           <strong className="white-text md-nav__head">...Dainty<i>Events</i></strong>
@@ -53,23 +26,16 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
             <MDBNavItem active>
-            <MDBNavLink to="/" className="md-nav__link">Home</MDBNavLink>
-              {/* <a href="#home" className="md-nav__link">Home</a> */}
+              <MDBNavLink to="#home" className="md-nav__link">Home</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              {/* <a href="#events" className="md-nav__link">Events</a> */}
-              <MDBNavLink to="/birthdays" className="md-nav__link">Birthdays</MDBNavLink>
-              {/* <MDBNavLink>
-              <li className="nav__item"><Link to="/birthdays" className="nav__link">Birthdays</Link></li>
-              </MDBNavLink> */}
+              <MDBNavLink to="#events" className="md-nav__link">Events</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/weddings" className="md-nav__link">Weddings</MDBNavLink>
-              {/* <a href="#our-work" className="md-nav__link">Our work</a> */}
+              <MDBNavLink to="#our-work" className="md-nav__link">Our work</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/corporate" className="md-nav__link">Corporate</MDBNavLink>
-              {/* <a href="#contact-us" className="md-nav__link">Contact us</a> */}
+              <MDBNavLink to="#contact-us" className="md-nav__link">Contact us</MDBNavLink>
             </MDBNavItem>
             {/* <MDBNavItem>
               <MDBDropdown>
@@ -119,9 +85,9 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-      
+    </Router>
     );
   }
 }
 
-export default Navbar;
+export default NavbarPage;
